@@ -104,7 +104,6 @@ Ye me too
 Looking forward to it! See yall tomorrow!
 51840: Bet
 exit
-An error occurred: [Errno 9] Bad file descriptor
 Disconnected from server
 ```
 
@@ -131,7 +130,6 @@ Sounds good
 51839: Looking forward to it! See yall tomorrow!
 Bet
 exit
-An error occurred: [Errno 9] Bad file descriptor
 Disconnected from server
 ```
 
@@ -158,6 +156,5 @@ Let's meet up at the library at noon tomorrow, have lunch and get started review
 51839: Looking forward to it! See yall tomorrow!
 51840: Bet
 exit
-An error occurred: [Errno 9] Bad file descriptor
 Disconnected from server
 ```
