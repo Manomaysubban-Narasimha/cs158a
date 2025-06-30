@@ -54,55 +54,110 @@ Here is an example of the output from the server and three clients.
 
 ```
 [LISTENING] Server is listening on 127.0.0.1:12345
-[NEW CONNECTION] ('127.0.0.1', 54321) connected.
-[NEW CONNECTION] ('127.0.0.1', 54322) connected.
-[NEW CONNECTION] ('127.0.0.1', 54323) connected.
-[('127.0.0.1', 54321)] Relaying message: 54321: Hi everyone!
-[('127.0.0.1', 54322)] Relaying message: 54322: Hello there!
-[('127.0.0.1', 54323)] Relaying message: 54323: How is this chat assignment going?
-[('127.0.0.1', 54321)] Relaying message: 54321: Pretty well, it seems to work!
-[('127.0.0.1', 54322)] Sent exit command.
-[DISCONNECTED] ('127.0.0.1', 54322) has been removed.
+[NEW CONNECTION] ('127.0.0.1', 51839) connected.
+[NEW CONNECTION] ('127.0.0.1', 51840) connected.
+[NEW CONNECTION] ('127.0.0.1', 51843) connected.
+[('127.0.0.1', 51839)] Relaying message: 51839: Hello, everyone!
+[('127.0.0.1', 51840)] Relaying message: 51840: Hey!
+[('127.0.0.1', 51843)] Relaying message: 51843: Wassup yall
+[('127.0.0.1', 51839)] Relaying message: 51839: How are you all doing?
+[('127.0.0.1', 51840)] Relaying message: 51840: I am doing well. What about yall?
+[('127.0.0.1', 51843)] Relaying message: 51843: I am doing well. Have yall started studying for the exam yet?
+[('127.0.0.1', 51839)] Relaying message: 51839: Nah not yet
+[('127.0.0.1', 51840)] Relaying message: 51840: Me neither
+[('127.0.0.1', 51843)] Relaying message: 51843: Yall wanna plan a study session tomorrow?
+[('127.0.0.1', 51840)] Relaying message: 51840: Yea sure im down
+[('127.0.0.1', 51839)] Relaying message: 51839: Ye me too
+[('127.0.0.1', 51843)] Relaying message: 51843: Aight bet
+[('127.0.0.1', 51843)] Relaying message: 51843: Let's meet up at the library at noon tomorrow, have lunch and get started reviewing
+[('127.0.0.1', 51840)] Relaying message: 51840: Sounds good
+[('127.0.0.1', 51839)] Relaying message: 51839: Looking forward to it! See yall tomorrow!
+[('127.0.0.1', 51840)] Relaying message: 51840: Bet
+[('127.0.0.1', 51839)] Sent exit command.
+[DISCONNECTED] ('127.0.0.1', 51839) has been removed.
+[('127.0.0.1', 51840)] Sent exit command.
+[DISCONNECTED] ('127.0.0.1', 51840) has been removed.
+[('127.0.0.1', 51843)] Sent exit command.
+[DISCONNECTED] ('127.0.0.1', 51843) has been removed.
 ```
 
 ---
 
-#### **Client 1 Terminal (Port 54321)**
+#### **Client 1 Terminal (Port 51839)**
 
 ```
 Connected to chat server. Type 'exit' to leave.
-Hi everyone!
-54322: Hello there!
-54323: How is this chat assignment going?
-Pretty well, it seems to work!
+Hello, everyone!
+51840: Hey!
+51843: Wassup yall
+How are you all doing?
+51840: I am doing well. What about yall?
+51843: I am doing well. Have yall started studying for the exam yet?
+Nah not yet
+51840: Me neither
+51843: Yall wanna plan a study session tomorrow?
+51840: Yea sure im down
+Ye me too
+51843: Aight bet
+51843: Let's meet up at the library at noon tomorrow, have lunch and get started reviewing
+51840: Sounds good
+Looking forward to it! See yall tomorrow!
+51840: Bet
 exit
+An error occurred: [Errno 9] Bad file descriptor
 Disconnected from server
 ```
 
 ---
 
-#### **Client 2 Terminal (Port 54322)**
+#### **Client 2 Terminal (Port 51840)**
 
 ```
 Connected to chat server. Type 'exit' to leave.
-54321: Hi everyone!
-Hello there!
-54323: How is this chat assignment going?
-54321: Pretty well, it seems to work!
+51839: Hello, everyone!
+Hey!                  
+51843: Wassup yall
+51839: How are you all doing?
+I am doing well. What about yall?
+51843: I am doing well. Have yall started studying for the exam yet?
+51839: Nah not yet
+Me neither
+51843: Yall wanna plan a study session tomorrow?
+Yea sure im down
+51839: Ye me too
+51843: Aight bet
+51843: Let's meet up at the library at noon tomorrow, have lunch and get started reviewing
+Sounds good
+51839: Looking forward to it! See yall tomorrow!
+Bet
 exit
+An error occurred: [Errno 9] Bad file descriptor
 Disconnected from server
 ```
 
 ---
 
-#### **Client 3 Terminal (Port 54323)**
+#### **Client 3 Terminal (Port 51843)**
 
 ```
 Connected to chat server. Type 'exit' to leave.
-54321: Hi everyone!
-54322: Hello there!
-How is this chat assignment going?
-54321: Pretty well, it seems to work!
+51839: Hello, everyone!
+51840: Hey!
+Wassup yall
+51839: How are you all doing?
+51840: I am doing well. What about yall?
+I am doing well. Have yall started studying for the exam yet?
+51839: Nah not yet
+51840: Me neither
+Yall wanna plan a study session tomorrow?
+51840: Yea sure im down
+51839: Ye me too
+Aight bet
+Let's meet up at the library at noon tomorrow, have lunch and get started reviewing
+51840: Sounds good
+51839: Looking forward to it! See yall tomorrow!
+51840: Bet
 exit
+An error occurred: [Errno 9] Bad file descriptor
 Disconnected from server
 ```
