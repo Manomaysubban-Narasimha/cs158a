@@ -28,7 +28,6 @@ def receive_full_response(client_socket, bufsize):
         except ValueError:
             print(f"Error: Could not convert received length '{response_len_str}' to integer because length is not provided.")
             return None # Server closed the connection
-
         # Step 2: Receive the complete message in chunks
         # This loop handles responses larger than the buffer size
         message_chunks = []
@@ -67,7 +66,7 @@ def main():
 
     # Get user input
     # The user must provide the length manually as part of the input
-    # Format: [length][message]
+    # Format: [length][message]             
     # Example: "10helloworld" means "send 'helloworld' which is 10 characters long"
     sentence = input('Input lowercase sentence: ')
 

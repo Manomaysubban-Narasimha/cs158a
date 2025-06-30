@@ -2,19 +2,19 @@
 
 This project implements a multi-client chat application using Python's `socket` and `threading` libraries.
 
-[cite_start]The system consists of a server (`mychatserver.py`) and one or more clients (`mychatclient.py`) that communicate over TCP sockets. [cite: 7]
+The system consists of a server (`mychatserver.py`) and one or more clients (`mychatclient.py`) that communicate over TCP sockets. 
 
 ## Code Description and Features
 
 * **`mychatserver.py`**: The central server that listens for client connections.
-    * [cite_start]It is multi-threaded, spawning a new thread for each connected client to handle communication. [cite: 8]
-    * [cite_start]It maintains a list of all active clients. [cite: 2]
-    * [cite_start]When it receives a message from a client, it broadcasts that message to all other connected clients. [cite: 2]
-    * [cite_start]Messages are formatted with the sender's port number, e.g., `f"{port_number}: {message}"`. [cite: 6]
+    * It is multi-threaded, spawning a new thread for each connected client to handle communication. 
+    * It maintains a list of all active clients. 
+    * When it receives a message from a client, it broadcasts that message to all other connected clients. 
+    * Messages are formatted with the sender's port number, e.g., `f"{port_number}: {message}"`. 
 
 * **`mychatclient.py`**: The client program that users run to participate in the chat.
-    * It uses two threads: one for sending user input and another for continuously receiving messages from the server. [cite_start]This allows for non-blocking communication. 
-    * [cite_start]Users can type `exit` to disconnect gracefully from the server. [cite: 11]
+    * It uses two threads: one for sending user input and another for continuously receiving messages from the server. This allows for non-blocking communication. 
+    * Users can type `exit` to disconnect gracefully from the server. 
 
 ## How to Run the Application
 
@@ -42,9 +42,9 @@ In separate new terminals, navigate to the `a2` directory and run the client scr
 python mychatclient.py
 ```
 
-[cite_start]Each client will connect to the server and display a welcome message. [cite: 15]
+Each client will connect to the server and display a welcome message. 
 
-## [cite_start]Execution Example 
+## Execution Example 
 
 Here is an example of the output from the server and three clients, similar to the one in the assignment description.
 

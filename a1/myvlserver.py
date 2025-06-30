@@ -1,6 +1,6 @@
 # myvlserver.py
 # This server implements a TCP socket that handles variable-length messages
-# using a length-prefix protocol. The first 2 bytes of each message indicate
+# using a custom length-prefix protocol as the application layer protocl. The first 2 bytes of each message indicate
 # the length of the following message content.
 
 from socket import *  # Import all socket-related functions and constants
@@ -99,7 +99,7 @@ def main():
     # Create and configure the server socket
     server_socket = socket(AF_INET, SOCK_STREAM)  # AF_INET for IPv4, SOCK_STREAM for TCP
     server_socket.bind(('', server_port))  # Bind to all available interfaces
-    server_socket.listen(1)  # Allow one queued connection
+    server_socket.listen()  # Listen for incoming connections served on a FIFO basis; queue size is determined by the operating system
     
     print("The server is ready to receive messages")
 
@@ -111,6 +111,7 @@ def main():
         connection_socket, addr = server_socket.accept()
         # Handle the client's request
         handle_client(connection_socket, addr, bufsize)
+        print("Waiting for the next client connection...\n")
 
 
 if __name__ == "__main__":
