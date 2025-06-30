@@ -46,9 +46,7 @@ Each client will connect to the server and display a welcome message.
 
 ## Execution Example 
 
-Here is an example of the output from the server and three clients, similar to the one in the assignment description.
-
-**(This is a text-based representation. You should replace this with a screenshot or a copy-paste of your actual terminal output as required by the assignment instructions.)**
+Here is an example of the output from the server and three clients.
 
 ---
 
