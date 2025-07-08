@@ -1,0 +1,18 @@
+[Mon Jul  7 17:27:49 2025] Node initialized with UUID: b96e96c3-5f6d-4cde-a146-b56586110a39
+[Mon Jul  7 17:27:49 2025] Server listening on 127.0.0.1:5003
+[Mon Jul  7 17:27:49 2025] Connected to neighbor at 127.0.0.1:5001
+[Mon Jul  7 17:27:52 2025] Accepted connection from ('127.0.0.1', 57660)
+[Mon Jul  7 17:27:52 2025] Server thread waiting for client connection...
+[Mon Jul  7 17:27:52 2025] Client connected. Sending initial message.
+[Mon Jul  7 17:27:52 2025] Sent: uuid=b96e96c3-5f6d-4cde-a146-b56586110a39, flag=0
+[Mon Jul  7 17:27:52 2025] Received: uuid=786c8585-c8c9-4a7d-bc3c-8e610260cc83, flag=0, less, state=0
+[Mon Jul  7 17:27:52 2025] Message ignored: Received UUID 786c8585-c8c9-4a7d-bc3c-8e610260cc83 is smaller than my UUID b96e96c3-5f6d-4cde-a146-b56586110a39.
+[Mon Jul  7 17:27:52 2025] Received: uuid=b96e96c3-5f6d-4cde-a146-b56586110a39, flag=0, same, state=0
+[Mon Jul  7 17:27:52 2025] LEADER: My own UUID b96e96c3-5f6d-4cde-a146-b56586110a39 has returned. I am the leader.
+[Mon Jul  7 17:27:52 2025] leader is b96e96c3-5f6d-4cde-a146-b56586110a39
+[Mon Jul  7 17:27:52 2025] Sent: uuid=b96e96c3-5f6d-4cde-a146-b56586110a39, flag=1
+[Mon Jul  7 17:27:52 2025] Received: uuid=b96e96c3-5f6d-4cde-a146-b56586110a39, flag=1, same, state=1, leader_id=b96e96c3-5f6d-4cde-a146-b56586110a39
+[Mon Jul  7 17:27:52 2025] Message ignored: Leader is already known to be b96e96c3-5f6d-4cde-a146-b56586110a39
+[Mon Jul  7 17:29:50 2025] Ending listen loop.
+[Mon Jul  7 17:29:51 2025] Cleaning up resources...
+[Mon Jul  7 17:29:51 2025] Shutdown complete.

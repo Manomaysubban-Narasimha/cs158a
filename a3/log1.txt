@@ -1,0 +1,15 @@
+[Mon Jul  7 17:27:28 2025] Node initialized with UUID: 6ebd59ee-f9c6-4083-af3d-aa33d5d2c108
+[Mon Jul  7 17:27:28 2025] Server listening on 127.0.0.1:5001
+[Mon Jul  7 17:27:48 2025] Connected to neighbor at 127.0.0.1:5002
+[Mon Jul  7 17:27:49 2025] Accepted connection from ('127.0.0.1', 57659)
+[Mon Jul  7 17:27:49 2025] Server thread waiting for client connection...
+[Mon Jul  7 17:27:49 2025] Client connected. Sending initial message.
+[Mon Jul  7 17:27:49 2025] Sent: uuid=6ebd59ee-f9c6-4083-af3d-aa33d5d2c108, flag=0
+[Mon Jul  7 17:27:52 2025] Received: uuid=b96e96c3-5f6d-4cde-a146-b56586110a39, flag=0, greater, state=0
+[Mon Jul  7 17:27:52 2025] Sent: uuid=b96e96c3-5f6d-4cde-a146-b56586110a39, flag=0
+[Mon Jul  7 17:27:52 2025] Received: uuid=b96e96c3-5f6d-4cde-a146-b56586110a39, flag=1, greater, state=0
+[Mon Jul  7 17:27:52 2025] Sent: uuid=b96e96c3-5f6d-4cde-a146-b56586110a39, flag=1
+[Mon Jul  7 17:29:50 2025] Ctrl+C detected. Initiating shutdown...
+[Mon Jul  7 17:29:50 2025] Cleaning up resources...
+[Mon Jul  7 17:29:51 2025] Ending listen loop.
+[Mon Jul  7 17:29:51 2025] Shutdown complete.

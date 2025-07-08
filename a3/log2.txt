@@ -1,0 +1,16 @@
+[Mon Jul  7 17:27:42 2025] Node initialized with UUID: 786c8585-c8c9-4a7d-bc3c-8e610260cc83
+[Mon Jul  7 17:27:42 2025] Server listening on 127.0.0.1:5002
+[Mon Jul  7 17:27:48 2025] Accepted connection from ('127.0.0.1', 57658)
+[Mon Jul  7 17:27:48 2025] Server thread waiting for client connection...
+[Mon Jul  7 17:27:52 2025] Connected to neighbor at 127.0.0.1:5003
+[Mon Jul  7 17:27:52 2025] Client connected. Sending initial message.
+[Mon Jul  7 17:27:52 2025] Sent: uuid=786c8585-c8c9-4a7d-bc3c-8e610260cc83, flag=0
+[Mon Jul  7 17:27:52 2025] Received: uuid=6ebd59ee-f9c6-4083-af3d-aa33d5d2c108, flag=0, less, state=0
+[Mon Jul  7 17:27:52 2025] Message ignored: Received UUID 6ebd59ee-f9c6-4083-af3d-aa33d5d2c108 is smaller than my UUID 786c8585-c8c9-4a7d-bc3c-8e610260cc83.
+[Mon Jul  7 17:27:52 2025] Received: uuid=b96e96c3-5f6d-4cde-a146-b56586110a39, flag=0, greater, state=0
+[Mon Jul  7 17:27:52 2025] Sent: uuid=b96e96c3-5f6d-4cde-a146-b56586110a39, flag=0
+[Mon Jul  7 17:27:52 2025] Received: uuid=b96e96c3-5f6d-4cde-a146-b56586110a39, flag=1, greater, state=0
+[Mon Jul  7 17:27:52 2025] Sent: uuid=b96e96c3-5f6d-4cde-a146-b56586110a39, flag=1
+[Mon Jul  7 17:29:50 2025] Ending listen loop.
+[Mon Jul  7 17:29:50 2025] Cleaning up resources...
+[Mon Jul  7 17:29:50 2025] Shutdown complete.
