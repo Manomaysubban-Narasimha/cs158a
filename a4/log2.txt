@@ -1,0 +1,20 @@
+[Wed Jul  9 15:22:42 2025] Node initialized with UUID: 67508fa6-3e37-4968-ae33-ffec40b90008
+[Wed Jul  9 15:22:42 2025] Logging to log2.txt
+[Wed Jul  9 15:22:42 2025] Server listening on 127.0.0.1:5002
+[Wed Jul  9 15:22:42 2025] Connection to neighbor refused. Retrying... (Attempt 1)
+[Wed Jul  9 15:22:44 2025] Accepted connection from ('127.0.0.1', 50611)
+[Wed Jul  9 15:22:44 2025] Server thread waiting for client connection...
+[Wed Jul  9 15:22:52 2025] Connected to neighbor at 127.0.0.1:5003
+[Wed Jul  9 15:22:52 2025] Client connected. Sending initial message.
+[Wed Jul  9 15:22:52 2025] Sent: uuid=67508fa6-3e37-4968-ae33-ffec40b90008, flag=0
+[Wed Jul  9 15:22:52 2025] Received: uuid=703d0acc-55ab-41b4-b022-75367f8ac2be, flag=0, greater, state=0
+[Wed Jul  9 15:22:52 2025] Sent: uuid=703d0acc-55ab-41b4-b022-75367f8ac2be, flag=0
+[Wed Jul  9 15:22:52 2025] Received: uuid=c1918626-3f0e-432b-b6e8-bc7a7e32524b, flag=0, greater, state=0
+[Wed Jul  9 15:22:52 2025] Sent: uuid=c1918626-3f0e-432b-b6e8-bc7a7e32524b, flag=0
+[Wed Jul  9 15:22:52 2025] Received: uuid=c1918626-3f0e-432b-b6e8-bc7a7e32524b, flag=1, greater, state=0
+[Wed Jul  9 15:22:52 2025] Announcement received. Leader is c1918626-3f0e-432b-b6e8-bc7a7e32524b
+[Wed Jul  9 15:22:52 2025] leader is c1918626-3f0e-432b-b6e8-bc7a7e32524b
+[Wed Jul  9 15:22:52 2025] Sent: uuid=c1918626-3f0e-432b-b6e8-bc7a7e32524b, flag=1
+[Wed Jul  9 15:23:04 2025] Ending listen loop.
+[Wed Jul  9 15:23:05 2025] Cleaning up resources...
+[Wed Jul  9 15:23:05 2025] Shutdown complete.
