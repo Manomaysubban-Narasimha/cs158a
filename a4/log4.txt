@@ -1,0 +1,22 @@
+[Sun Jul 20 19:30:39 2025] Node initialized with UUID: 7a789f1f-c57b-4a35-850f-7a8205e164b2
+[Sun Jul 20 19:30:39 2025] Logging to log4.txt
+[Sun Jul 20 19:30:39 2025] Server listening on 127.0.0.1:5001
+[Sun Jul 20 19:30:39 2025] Connection to neighbor refused. Retrying... (Attempt 1)
+[Sun Jul 20 19:30:49 2025] Connection to neighbor refused. Retrying... (Attempt 2)
+[Sun Jul 20 19:30:59 2025] Connected to neighbor at 127.0.0.1:5002
+[Sun Jul 20 19:31:07 2025] Accepted connection from ('127.0.0.1', 58608)
+[Sun Jul 20 19:31:07 2025] Server thread waiting for client connection...
+[Sun Jul 20 19:31:07 2025] Client connected. Sending initial message.
+[Sun Jul 20 19:31:07 2025] Sent: uuid=7a789f1f-c57b-4a35-850f-7a8205e164b2, flag=0
+[Sun Jul 20 19:31:07 2025] Received: uuid=59064c2b-cf8b-4301-a0ea-93cad3ef9f8a, flag=0, less, state=0
+[Sun Jul 20 19:31:07 2025] Message ignored: Received UUID 59064c2b-cf8b-4301-a0ea-93cad3ef9f8a is smaller than my UUID 7a789f1f-c57b-4a35-850f-7a8205e164b2.
+[Sun Jul 20 19:31:07 2025] Received: uuid=b6d6d1e0-21fc-41e1-a053-2ca2e51cfe21, flag=0, greater, state=0
+[Sun Jul 20 19:31:07 2025] Sent: uuid=b6d6d1e0-21fc-41e1-a053-2ca2e51cfe21, flag=0
+[Sun Jul 20 19:31:07 2025] Received: uuid=b6d6d1e0-21fc-41e1-a053-2ca2e51cfe21, flag=1, greater, state=0
+[Sun Jul 20 19:31:07 2025] Announcement received. Leader is b6d6d1e0-21fc-41e1-a053-2ca2e51cfe21
+[Sun Jul 20 19:31:07 2025] leader is b6d6d1e0-21fc-41e1-a053-2ca2e51cfe21
+[Sun Jul 20 19:31:07 2025] Sent: uuid=b6d6d1e0-21fc-41e1-a053-2ca2e51cfe21, flag=1
+[Sun Jul 20 19:34:16 2025] Ctrl+C detected. Initiating shutdown...
+[Sun Jul 20 19:34:16 2025] Cleaning up resources...
+[Sun Jul 20 19:34:17 2025] Ending listen loop.
+[Sun Jul 20 19:34:17 2025] Shutdown complete.

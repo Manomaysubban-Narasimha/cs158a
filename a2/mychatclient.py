@@ -5,7 +5,7 @@ import threading
 
 # --- Configuration ---
 HOST = '127.0.0.1'  # The server's hostname or IP address
-PORT = 12345        # The port used by the server
+PORT = 12000        # The port used by the server
 BUFSIZE = 1024      # Buffer size for receiving data, as per instructions.
 
 def receive_messages(client_socket):
@@ -15,11 +15,19 @@ def receive_messages(client_socket):
     """
     while True:
         try:
-            message = client_socket.recv(BUFSIZE)
-            if not message:
-                print("\n[DISCONNECTED] Server connection lost.")
-                break
-            
+            # Accumulate chunks until we get all data for a message
+            chunks = []
+            while True:
+                chunk = client_socket.recv(BUFSIZE)
+                if not chunk:
+                    # Server closed connection
+                    print("\n[DISCONNECTED] Server connection lost.")
+                    return
+                chunks.append(chunk)
+                # If the chunk is less than BUFSIZE, assume end of message
+                if len(chunk) < BUFSIZE:
+                    break
+            message = b''.join(chunks)
             print(message.decode('utf-8'))
 
         except OSError:

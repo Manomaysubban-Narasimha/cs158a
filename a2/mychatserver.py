@@ -23,7 +23,12 @@ def broadcast(message, sender_conn):
             # Don't send the message back to the original sender 
             if client_conn != sender_conn:
                 try:
-                    client_conn.send(message)
+                    total_sent = 0
+                    while total_sent < len(message):
+                        sent = client_conn.send(message[total_sent:])
+                        if sent == 0:
+                            raise RuntimeError("Socket connection broken")
+                        total_sent += sent
                 except socket.error:
                     # If sending fails, assume the client has disconnected.
                     # Will remove them in the handle_client function.
@@ -43,12 +48,21 @@ def handle_client(conn, addr):
 
     try:
         while True:
-            # Wait to receive a message from the client.
-            message = conn.recv(BUFSIZE)
-            if not message:
-                # If recv returns an empty bytes object, the client has disconnected.
+            # Accumulate chunks until the full message is received
+            chunks = []
+            while True:
+                chunk = conn.recv(BUFSIZE)
+                if not chunk:
+                    # If recv returns an empty bytes object, the client has disconnected.
+                    break
+                chunks.append(chunk)
+                # If the chunk is less than BUFSIZE, assume end of message
+                if len(chunk) < BUFSIZE:
+                    break
+            if not chunks:
                 break
 
+            message = b''.join(chunks)
             decoded_message = message.decode('utf-8')
 
             # Handle the 'exit' command from a client 
